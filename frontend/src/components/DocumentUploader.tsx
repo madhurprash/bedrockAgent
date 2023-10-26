@@ -55,7 +55,7 @@ const DocumentUploader: React.FC = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold pb-4">Add document</h2>
+      <h2 className="text-2xl font-bold pb-4">Add resume</h2>
       {inputStatus === "idle" && (
         <div className="flex items-center justify-center w-full">
           <label
@@ -67,9 +67,9 @@ const DocumentUploader: React.FC = () => {
 
               <p className="mb-2 text-sm text-gray-500">
                 <span className="font-semibold">Click to upload</span> your
-                document
+                resume
               </p>
-              <p className="text-xs text-gray-500">Only .pdf accepted</p>
+              <p className="text-xs text-gray-500">Only .pdf resumes accepted</p>
             </div>
 
             <input
@@ -123,7 +123,7 @@ const DocumentUploader: React.FC = () => {
                     className="inline-flex items-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg px-3 py-2 text-sm mr-2 mb-2 "
                   >
                     <ArrowLeftCircleIcon className="w-5 h-5 mr-1.5" />
-                    Upload another document
+                    Upload another resume
                   </button>
                 )}
                 {buttonStatus === "ready" && (
@@ -133,7 +133,7 @@ const DocumentUploader: React.FC = () => {
                     className="inline-flex items-center bg-violet-900 text-white border border-gray-300 focus:outline-none hover:bg-violet-700 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg px-3 py-2 text-sm mr-2 mb-2 "
                   >
                     <CloudArrowUpIcon className="w-5 h-5 mr-1.5" />
-                    Upload document
+                    Upload resume
                   </button>
                 )}
                 {buttonStatus === "uploading" && (

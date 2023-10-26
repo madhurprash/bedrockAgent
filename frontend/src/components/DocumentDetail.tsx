@@ -41,7 +41,7 @@ const DocumentDetail: React.FC<Document> = (document: Document) => {
           <div className="flex flex-row justify-center pt-4">
             <span className="inline-flex items-center self-start bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">
               <CogIcon className="w-4 h-4 mr-1 animate-spin" />
-              Processing document
+              Processing resume
             </span>
           </div>
         )}
