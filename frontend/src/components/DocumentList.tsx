@@ -24,7 +24,7 @@ const DocumentList: React.FC = () => {
   return (
     <div>
       <div className="flex justify-between pt-6 pb-4">
-        <h2 className="text-2xl font-bold">My documents</h2>
+        <h2 className="text-2xl font-bold">Resume Versions</h2>
         <button
           onClick={fetchData}
           type="button"
@@ -53,7 +53,7 @@ const DocumentList: React.FC = () => {
       {listStatus === "idle" && documents.length === 0 && (
         <div className="flex flex-col items-center mt-4">
           <p className="font-bold text-lg">There's nothing here yet...</p>
-          <p className="mt-1">Upload your first document to get started!</p>
+          <p className="mt-1">Upload your first resume to get started!</p>
         </div>
       )}
       {listStatus === "loading" && documents.length === 0 && (
